@@ -1,0 +1,51 @@
+Liveoverflow web notes
+
+127.0.0.1 - local machine
+sensible-browser test.html
+file:///home/ak/UNIX/WEB/file1.html (in browser)
+
+wiki list of http status codes
+
+html notes ----------------------------------------------
+
+<tagname> metadata (key="value") </tagname>
+browser will compile with small syntax errors or "anti standard syntax"
+will move <form> out from within a <p> tag
+will end a tag if missed <h1>title
+
+
+css notes ---------------------------------------------
+
+style can be added in 3 ways
+1. directly to tag --- <img style="width: 100px" src="http:
+2. style section of html - within HEAD section <head><style>
+3. separate style sheet
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+style information is assigned to the tags
+
+
+javasript notes --------------------------------------------
+
+javascript added to HTML in 3 ways
+1.can be applied directly to an attribute
+  <input onclick"alert(1)" class="form_element"
+2.referenced from external file -- <script src="myscript.js">
+3. script tag in the html within HEAD section -- <script></script>
+
+javascript interacts with HTML in 2 ways
+1. events - trigger javascript execution
+2. accessing HTML from javascript thru DOM
+  use console in browser to play with javascript functions on DOM
+
+  document.body.children
+  document.body.children.innerText="test!!!"
+
+python webserver -----------------------------------------
+
+python -m SimpleHTTPServer 8080
+
+php webserver
+php -S 127.0.0.1:8080
+
+netstat -nlp -t
