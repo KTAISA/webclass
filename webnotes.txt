@@ -4,6 +4,13 @@ Liveoverflow web notes
 sensible-browser test.html
 file:///home/ak/UNIX/WEB/file1.html (in browser)
 
+manual html request from server -------
+nc 127.0.0.1 8080
+GET /file1.html
+
+netcat packet listen on server -------
+nc -llvp 8080
+
 wiki list of http status codes
 
 html notes ----------------------------------------------
